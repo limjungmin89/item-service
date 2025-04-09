@@ -79,7 +79,7 @@ public class BasicItemController {
 
         return "/basic/item";
     }
-
+    // ModelAttribute name 속성 생략시 클래스 첫글자 소문자하여 모델에 담김
 //    @PostMapping("/add")
     public String saveModelAttirbuteV2(@ModelAttribute Item item) {
         log.info("ModelAttribute >>> {}" , item);
